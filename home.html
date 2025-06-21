@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Afocus's Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #0f172a;
+      color: #ffffff;
+    }
+
+    header {
+      background: #1bb566;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    section {
+      padding: 20px;
+    }
+
+    .card {
+      background: #1e293b;
+      margin-bottom: 20px;
+      padding: 15px;
+      border-radius: 8px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 10px;
+      background: #1bb566;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    @media screen and (max-width: 600px) {
+      body {
+        font-size: 16px;
+      }
+    }
+    button {
+        color: #f43405;
+        margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Afocus Web Page</h1>
+  <p>Future Computer Scientist • Web Developer</p>
+</header>
+
+<section>
+  <div class="card">
+    <h2>About Me</h2>
+    <p>I’m Gbolahan, a student working toward becoming a great computer scientist. I enjoy building websites and learning from Programming with Mosh.</p>
+    <img src="18725.jpg">
+  </div>
+
+  <div class="card">
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML & CSS</li>
+      <li>JavaScript (basic)</li>
+      <li>Python (learning)</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>Projects</h2>
+    <p>Coming soon… (your to-do list, calculator, etc.)</p>
+  </div>
+
+  <div class="card">
+    <h2>Contact Me</h2>
+    <p>Email: koleoshogbolahan15@gmail.com</p>
+    <p>WhatsApp No: 08120589829</p>
+  </div>
+</section>
+<button onclick="toggleMode()" id="modeBtn">Switch to Light Mode</button>
+<script>
+  function toggleMode() {
+    const body = document.body;
+    const btn = document.getElementById("modeBtn");
+
+    body.classList.toggle("light");
+
+    if (body.classList.contains("light")) {
+      btn.textContent = "Switch to Dark Mode";
+    } else {
+      btn.textContent = "Switch to Light Mode";
+    }
+  }
+</script>
+<footer>
+  <p>© 2025 Afocus</p>
+</footer>
+
+</body>
+</html>
